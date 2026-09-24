@@ -1,0 +1,168 @@
+[
+  {
+    "slug": "cardioguard-heart-disease",
+    "title": "CardioGuard: End-to-End Heart Disease Prediction System",
+    "short_title": "CardioGuard — Heart Disease Prediction",
+    "one_line_summary": "Clinical decision support system evaluating cardiac risk across multiple machine learning classifiers with an interactive Streamlit dashboard.",
+    "headline_stat": "91.80% test accuracy · 96.43% recall",
+    "dataset": "UCI Cleveland Heart Disease — 303 records, 14 features (13 clinical predictors + 1 binary target: 0 = no disease, 1 = disease)",
+    "task": "Binary classification (presence vs absence of heart disease)",
+    "models_compared": "Logistic Regression, Random Forest, XGBoost, AdaBoost — 80/20 stratified split + 5-fold cross-validation",
+    "champion_model": "Random Forest",
+    "metrics": {
+      "accuracy": "91.80%",
+      "precision": "87.10%",
+      "recall": "96.43%",
+      "f1": "91.53%",
+      "roc_auc": "0.9502",
+      "test_cohort": "20% holdout test set = 61 patients"
+    },
+    "cross_validation": "5-fold CV accuracy 80.55% (± 2.66%)",
+    "cross_validation_note": "Presented honestly alongside test accuracy; the test set is small.",
+    "confusion_matrix": [
+      [29, 4],
+      [1, 27]
+    ],
+    "other_models": [
+      {
+        "model": "XGBoost",
+        "test_accuracy": "90.16%"
+      },
+      {
+        "model": "AdaBoost",
+        "test_accuracy": "88.52%"
+      },
+      {
+        "model": "Logistic Regression",
+        "test_accuracy": "86.89%"
+      }
+    ],
+    "app_features": [
+      "Patient-input sidebar",
+      "Instant risk prediction",
+      "Interactive risk gauge",
+      "Clinical risk-factor audit",
+      "Actionable recommendations",
+      "Multi-model analytics tab",
+      "EDA explorer",
+      "Clinical glossary"
+    ],
+    "tech_stack": [
+      "Python",
+      "pandas",
+      "NumPy",
+      "scikit-learn",
+      "XGBoost",
+      "Streamlit",
+      "Plotly",
+      "Matplotlib",
+      "Seaborn",
+      "Joblib"
+    ],
+    "live_url": "https://heart-diseases-prediction84.streamlit.app/",
+    "disclaimer": "This project is for educational and research purposes only and does not constitute medical advice."
+  },
+  {
+    "slug": "diabetes-risk-prediction",
+    "title": "Diabetes Risk Prediction App",
+    "short_title": "Diabetes Risk Prediction",
+    "one_line_summary": "Population-scale binary screening tool assessing diabetes risk using CDC BRFSS indicators and an ensemble learning architecture.",
+    "headline_stat": "79% accuracy · 62% recall (At-Risk class)",
+    "dataset": "CDC BRFSS 2015 Diabetes Health Indicators — 253,681 rows, 22 columns",
+    "task": "Binary classification — No Diabetes vs At Risk (prediabetes + diabetes merged). A 3-class version was tested first but the prediabetes class could not be detected reliably (severe class imbalance), so the final model is binary.",
+    "models_compared": "Random Forest, XGBoost, LightGBM, Decision Tree, SVM, AdaBoost; hyper-parameter tuning with GridSearchCV; multicollinearity check (VIF all < 2, so all features kept); feature engineering",
+    "champion_model": "Ensemble of Random Forest + XGBoost + LightGBM (decision threshold 0.60)",
+    "metrics": {
+      "accuracy": "79%",
+      "precision": "40%",
+      "recall": "62%",
+      "f1": "0.486",
+      "test_cohort": "At-Risk class, test set, threshold 0.60"
+    },
+    "cross_validation": null,
+    "cross_validation_note": null,
+    "confusion_matrix": null,
+    "other_models": [],
+    "honest_note": "Performance plateaued around F1 ≈ 0.48 across every algorithm and feature set tried, which points to a limit of the dataset rather than of the models. The app is designed as a screening aid.",
+    "app_features": [
+      "Prediction page (patient details → risk assessment)",
+      "Deep-analysis dashboard"
+    ],
+    "tech_stack": [
+      "Python",
+      "pandas",
+      "NumPy",
+      "scikit-learn",
+      "XGBoost",
+      "LightGBM",
+      "statsmodels",
+      "Plotly",
+      "Seaborn",
+      "Matplotlib",
+      "Streamlit",
+      "Jupyter"
+    ],
+    "live_url": null,
+    "disclaimer": "This project is for educational and research purposes only and does not constitute medical advice."
+  },
+  {
+    "slug": "breast-cancer-survival-prognosis",
+    "title": "Breast Cancer Survival Prognosis",
+    "short_title": "Breast Cancer Survival Prognosis",
+    "one_line_summary": "Clinical survival prognosis system predicting overall survival status from patient clinical and pathological features.",
+    "headline_stat": "77.89% accuracy · ROC-AUC 0.8542",
+    "dataset": "breast-cancer clinical dataset",
+    "task": "Predict Overall Survival Status from clinical features",
+    "features": {
+      "numeric": [
+        "Age at Diagnosis",
+        "Tumor Size",
+        "Tumor Stage",
+        "Lymph Nodes Examined Positive",
+        "Neoplasm Histologic Grade"
+      ],
+      "categorical": [
+        "Type of Breast Surgery",
+        "Chemotherapy",
+        "Radio Therapy",
+        "Hormone Therapy",
+        "ER Status",
+        "PR Status",
+        "HER2 Status",
+        "Inferred Menopausal State",
+        "Primary Tumor Laterality",
+        "Cellularity"
+      ]
+    },
+    "models_compared": "XGBoost (winner), Random Forest, AdaBoost, Decision Tree — GridSearchCV + 5-fold stratified cross-validation",
+    "champion_model": "XGBoost",
+    "metrics": {
+      "accuracy": "77.89%",
+      "precision": "63.59%",
+      "recall": "78.44%",
+      "f1": "0.7024",
+      "roc_auc": "0.8542",
+      "test_cohort": "Holdout test set evaluation"
+    },
+    "cross_validation": "5-fold stratified cross-validation evaluated via GridSearchCV",
+    "cross_validation_note": null,
+    "confusion_matrix": null,
+    "other_models": [],
+    "app_features": [
+      "Patient clinical feature input form",
+      "Survival prognosis prediction",
+      "Model performance metrics and ROC analysis"
+    ],
+    "tech_stack": [
+      "Python",
+      "pandas",
+      "scikit-learn",
+      "XGBoost",
+      "Plotly",
+      "Joblib",
+      "Streamlit"
+    ],
+    "live_url": "https://breast-cancerproject.streamlit.app",
+    "disclaimer": "This project is for educational and research purposes only and does not constitute medical advice."
+  }
+]

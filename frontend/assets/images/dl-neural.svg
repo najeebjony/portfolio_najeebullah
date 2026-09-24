@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091428" />
+      <stop offset="100%" stop-color="#142848" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" rx="16" fill="url(#dlGrad)" />
+
+  <!-- Neural Network Architecture -->
+  <g transform="translate(60, 75)">
+    <!-- Connections -->
+    <!-- Input to Hidden 1 -->
+    <g stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.2">
+      <!-- In1 (40, 40) -->
+      <line x1="40" y1="40" x2="160" y2="20" />
+      <line x1="40" y1="40" x2="160" y2="70" />
+      <line x1="40" y1="40" x2="160" y2="120" />
+      <line x1="40" y1="40" x2="160" y2="170" />
+
+      <!-- In2 (40, 105) -->
+      <line x1="40" y1="105" x2="160" y2="20" />
+      <line x1="40" y1="105" x2="160" y2="70" />
+      <line x1="40" y1="105" x2="160" y2="120" />
+      <line x1="40" y1="105" x2="160" y2="170" />
+
+      <!-- In3 (40, 170) -->
+      <line x1="40" y1="170" x2="160" y2="20" />
+      <line x1="40" y1="170" x2="160" y2="70" />
+      <line x1="40" y1="170" x2="160" y2="120" />
+      <line x1="40" y1="170" x2="160" y2="170" />
+
+      <!-- Hidden 1 to Hidden 2 -->
+      <line x1="160" y1="20" x2="300" y2="20" />
+      <line x1="160" y1="20" x2="300" y2="70" />
+      <line x1="160" y1="20" x2="300" y2="120" />
+      <line x1="160" y1="20" x2="300" y2="170" />
+
+      <line x1="160" y1="70" x2="300" y2="20" />
+      <line x1="160" y1="70" x2="300" y2="70" />
+      <line x1="160" y1="70" x2="300" y2="120" />
+      <line x1="160" y1="70" x2="300" y2="170" />
+
+      <line x1="160" y1="120" x2="300" y2="20" />
+      <line x1="160" y1="120" x2="300" y2="70" />
+      <line x1="160" y1="120" x2="300" y2="120" />
+      <line x1="160" y1="120" x2="300" y2="170" />
+
+      <line x1="160" y1="170" x2="300" y2="20" />
+      <line x1="160" y1="170" x2="300" y2="70" />
+      <line x1="160" y1="170" x2="300" y2="120" />
+      <line x1="160" y1="170" x2="300" y2="170" />
+
+      <!-- Hidden 2 to Output -->
+      <line x1="300" y1="20" x2="420" y2="65" />
+      <line x1="300" y1="20" x2="420" y2="145" />
+      <line x1="300" y1="70" x2="420" y2="65" />
+      <line x1="300" y1="70" x2="420" y2="145" />
+      <line x1="300" y1="120" x2="420" y2="65" />
+      <line x1="300" y1="120" x2="420" y2="145" />
+      <line x1="300" y1="170" x2="420" y2="65" />
+      <line x1="300" y1="170" x2="420" y2="145" />
+    </g>
+
+    <!-- Nodes Input Layer -->
+    <g fill="#1e293b" stroke="#38bdf8" stroke-width="2">
+      <circle cx="40" cy="40" r="14" />
+      <circle cx="40" cy="105" r="14" />
+      <circle cx="40" cy="170" r="14" />
+    </g>
+    <text x="40" y="215" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Input</text>
+
+    <!-- Nodes Hidden Layer 1 -->
+    <g fill="#1e3d59" stroke="#17a2b8" stroke-width="2">
+      <circle cx="160" cy="20" r="12" />
+      <circle cx="160" cy="70" r="12" />
+      <circle cx="160" cy="120" r="12" />
+      <circle cx="160" cy="170" r="12" />
+    </g>
+    <text x="160" y="215" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Dense L1</text>
+
+    <!-- Nodes Hidden Layer 2 -->
+    <g fill="#1e3d59" stroke="#2dd4bf" stroke-width="2">
+      <circle cx="300" cy="20" r="12" />
+      <circle cx="300" cy="70" r="12" />
+      <circle cx="300" cy="120" r="12" />
+      <circle cx="300" cy="170" r="12" />
+    </g>
+    <text x="300" y="215" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Dense L2</text>
+
+    <!-- Nodes Output Layer -->
+    <g fill="#0f172a" stroke="#10b981" stroke-width="2">
+      <circle cx="420" cy="65" r="14" />
+      <circle cx="420" cy="145" r="14" />
+    </g>
+    <text x="420" y="215" fill="#10b981" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Prognosis</text>
+  </g>
+
+  <!-- Title Badge -->
+  <rect x="30" y="28" width="230" height="28" rx="6" fill="rgba(45,212,191,0.15)" stroke="#2dd4bf" stroke-width="1"/>
+  <text x="145" y="47" fill="#2dd4bf" font-family="'Inter', sans-serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">DEEP LEARNING</text>
+</svg>

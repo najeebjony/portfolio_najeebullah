@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2132" />
+      <stop offset="100%" stop-color="#1e3d59" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" rx="16" fill="url(#dsGrad)" />
+
+  <!-- Data Analysis Visuals -->
+  <g transform="translate(60, 75)">
+    <!-- Axis lines -->
+    <line x1="30" y1="210" x2="450" y2="210" stroke="#475569" stroke-width="2" />
+    <line x1="30" y1="30" x2="30" y2="210" stroke="#475569" stroke-width="2" />
+
+    <!-- Grid lines -->
+    <line x1="30" y1="75" x2="450" y2="75" stroke="#334155" stroke-dasharray="3 3" />
+    <line x1="30" y1="120" x2="450" y2="120" stroke="#334155" stroke-dasharray="3 3" />
+    <line x1="30" y1="165" x2="450" y2="165" stroke="#334155" stroke-dasharray="3 3" />
+
+    <!-- Bar Chart Elements -->
+    <rect x="60" y="110" width="36" height="100" rx="4" fill="#38bdf8" opacity="0.85"/>
+    <rect x="120" y="70" width="36" height="140" rx="4" fill="#17a2b8" opacity="0.85"/>
+    <rect x="180" y="90" width="36" height="120" rx="4" fill="#38bdf8" opacity="0.85"/>
+    <rect x="240" y="50" width="36" height="160" rx="4" fill="#10b981" opacity="0.85"/>
+    <rect x="300" y="80" width="36" height="130" rx="4" fill="#17a2b8" opacity="0.85"/>
+    <rect x="360" y="130" width="36" height="80" rx="4" fill="#f59e0b" opacity="0.85"/>
+
+    <!-- Trend line overlay -->
+    <path d="M 78 95 Q 138 50, 198 75 T 318 60 T 378 110" fill="none" stroke="#f1f5f9" stroke-width="3"/>
+    <circle cx="78" cy="95" r="4" fill="#f1f5f9"/>
+    <circle cx="138" cy="55" r="4" fill="#f1f5f9"/>
+    <circle cx="198" cy="75" r="4" fill="#f1f5f9"/>
+    <circle cx="258" cy="38" r="4" fill="#f1f5f9"/>
+    <circle cx="318" cy="60" r="4" fill="#f1f5f9"/>
+    <circle cx="378" cy="110" r="4" fill="#f1f5f9"/>
+  </g>
+
+  <!-- Title Badge -->
+  <rect x="30" y="28" width="250" height="28" rx="6" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="1"/>
+  <text x="155" y="47" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">DATA SCIENCE &amp; ANALYTICS</text>
+</svg>

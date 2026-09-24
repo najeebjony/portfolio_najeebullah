@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3d59" />
+      <stop offset="100%" stop-color="#0f2132" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#17a2b8" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" rx="16" fill="url(#mlGrad)" />
+  <rect width="600" height="400" rx="16" fill="url(#grid)" />
+
+  <!-- Flow Diagrams / Decision Tree & Ensemble -->
+  <g transform="translate(60, 60)">
+    <!-- Root Node -->
+    <rect x="180" y="20" width="120" height="44" rx="8" fill="#17a2b8" opacity="0.9"/>
+    <text x="240" y="47" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="600" text-anchor="middle">Input Features (X)</text>
+
+    <!-- Connectors -->
+    <path d="M 240 64 L 140 120" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 2"/>
+    <path d="M 240 64 L 340 120" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 2"/>
+
+    <!-- Split Nodes -->
+    <rect x="80" y="120" width="120" height="42" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="140" y="146" fill="#f1f5f9" font-family="'Inter', sans-serif" font-size="12" font-weight="500" text-anchor="middle">Ensemble / RF</text>
+
+    <rect x="280" y="120" width="120" height="42" rx="8" fill="#1e293b" stroke="#17a2b8" stroke-width="1.5"/>
+    <text x="340" y="146" fill="#f1f5f9" font-family="'Inter', sans-serif" font-size="12" font-weight="500" text-anchor="middle">Gradient Boosting</text>
+
+    <!-- Connectors to Leaf -->
+    <path d="M 140 162 L 90 210" stroke="#64748b" stroke-width="1.5"/>
+    <path d="M 140 162 L 190 210" stroke="#64748b" stroke-width="1.5"/>
+    <path d="M 340 162 L 290 210" stroke="#64748b" stroke-width="1.5"/>
+    <path d="M 340 162 L 390 210" stroke="#64748b" stroke-width="1.5"/>
+
+    <!-- Performance Metric Box -->
+    <rect x="40" y="210" width="100" height="36" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <text x="90" y="233" fill="#10b981" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">ROC: 0.9502</text>
+
+    <rect x="150" y="210" width="100" height="36" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="200" y="233" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Accuracy: 91.8%</text>
+
+    <rect x="250" y="210" width="100" height="36" rx="6" fill="#0f172a" stroke="#17a2b8" stroke-width="1"/>
+    <text x="300" y="233" fill="#17a2b8" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Recall: 96.4%</text>
+
+    <rect x="360" y="210" width="100" height="36" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="410" y="233" fill="#f59e0b" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">F1: 91.5%</text>
+  </g>
+
+  <!-- Title Badge -->
+  <rect x="30" y="28" width="220" height="28" rx="6" fill="rgba(23,162,184,0.15)" stroke="#17a2b8" stroke-width="1"/>
+  <text x="140" y="47" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">MACHINE LEARNING</text>
+</svg>

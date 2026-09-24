@@ -1,0 +1,56 @@
+{
+  "name": "Najeeb Ullah",
+  "headline": "Machine Learning & AI Engineer | Building Manager, Karachi",
+  "location": "Karachi, Pakistan",
+  "email": "najeebullah.shaikh084@gmail.com",
+  "phone": [
+    "+92 322 2209484",
+    "+92 313 3017170"
+  ],
+  "linkedin": "https://www.linkedin.com/in/najeeb-ullah-907237142/",
+  "github": null,
+  "bio": "I am a Machine Learning and Artificial Intelligence Engineer based in Karachi, Pakistan, specializing in predictive modeling, deep learning architectures, and Generative AI systems using LangChain. My work encompasses exploratory data analysis, multi-model evaluation, retrieval-augmented generation (RAG), and deployed Streamlit applications. In addition to engineering, I manage residential building operations in Karachi, handling tenant communications, utility tracking, maintenance documentation, and technical repair coordination.",
+  "professional_areas": [
+    {
+      "title": "Machine Learning & Deep Learning",
+      "description": "Designs and trains end-to-end predictive systems, ensemble models, and neural architectures with rigorous cross-validation and clinical metric benchmarking.",
+      "image": "/assets/images/ml-concept.svg"
+    },
+    {
+      "title": "LangChain & Generative AI",
+      "description": "Constructs intelligent LLM-powered applications, Retrieval-Augmented Generation (RAG) pipelines, semantic document query engines, and agentic workflows.",
+      "image": "/assets/images/langchain-ai.svg"
+    },
+    {
+      "title": "Data Science & Exploratory Analytics",
+      "description": "Executes population-scale health analytics, multi-collinearity checks, feature engineering, and high-dimensional distribution profiling.",
+      "image": "/assets/images/data-science.svg"
+    },
+    {
+      "title": "Residential Building Management (Karachi)",
+      "description": "Oversees comprehensive operations for a residential property: resident notices, utility-bill reconciliation, maintenance records, and repair coordination.",
+      "image": null
+    }
+  ],
+  "experience": [
+    {
+      "role": "Residential Building Manager",
+      "location": "Karachi, Pakistan",
+      "responsibilities": [
+        "Drafting and issuing resident notices and policy guidelines",
+        "Tracking and reconciling monthly municipal and utility accounts",
+        "Maintaining comprehensive maintenance logs and inspection schedules",
+        "Coordinating technical repairs with contractors and facility personnel"
+      ]
+    }
+  ],
+  "skills": {
+    "Language": ["Python"],
+    "Generative AI & LLMs": ["LangChain", "RAG Pipelines", "Prompt Engineering", "Vector Embeddings", "LLM Orchestration"],
+    "Machine Learning": ["scikit-learn", "XGBoost", "LightGBM", "AdaBoost", "Random Forest", "Ensemble Methods"],
+    "Deep Learning": ["Neural Networks", "Representation Learning", "Loss Optimization"],
+    "Data Science & Analytics": ["pandas", "NumPy", "statsmodels", "Exploratory Data Analysis (EDA)", "Feature Engineering"],
+    "Visualization": ["Plotly", "Matplotlib", "Seaborn"],
+    "Deployment & Tools": ["Streamlit", "Jupyter", "Joblib"]
+  }
+}

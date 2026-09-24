@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Najeeb Ullah | Machine Learning Engineer & Building Manager</title>
+  <meta name="description" content="Official portfolio of Najeeb Ullah, Machine Learning Engineer and Residential Building Manager based in Karachi, Pakistan. End-to-end machine learning systems and operations.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Najeeb Ullah | Machine Learning Engineer & Building Manager">
+  <meta property="og:description" content="Official portfolio of Najeeb Ullah: End-to-end Machine Learning systems, healthcare predictive analytics, and residential building management in Karachi.">
+  <meta property="og:image" content="/assets/images/profile.jpg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Header / Sticky Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Najeeb Ullah Home">
+        <span class="logo-mark">NU</span>
+        <span class="logo-text">Najeeb Ullah</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#specializations" class="nav-link">Specializations</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li id="gallery-nav-item" class="nav-item-hidden"><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open mobile navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section section-padding">
+      <div class="container hero-container">
+        <div class="hero-avatar-wrapper">
+          <div id="hero-avatar-container" class="hero-avatar">
+            <!-- Rendered by JS or fallback -->
+            <div class="initials-avatar" id="hero-initials">NU</div>
+            <img id="hero-img" class="hero-photo hidden" src="/assets/images/profile.jpg" alt="Najeeb Ullah headshot" width="220" height="220">
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-badge">Professional Portfolio</div>
+          <h1 class="hero-name" id="hero-name">Najeeb Ullah</h1>
+          <p class="hero-headline" id="hero-headline">Machine Learning &amp; AI Engineer | Building Manager, Karachi</p>
+          <p class="hero-tagline">
+            Specializing in end-to-end Machine Learning, Deep Learning architectures, and Generative AI systems with LangChain, alongside residential building operations in Karachi, Pakistan.
+          </p>
+          
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <div class="hero-socials" id="hero-socials">
+            <a href="mailto:najeebullah.shaikh084@gmail.com" class="social-link" aria-label="Email Najeeb Ullah" title="Email: najeebullah.shaikh084@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/najeeb-ullah-907237142/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Najeeb Ullah on LinkedIn" title="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <!-- GitHub is null in profile, kept hidden by default -->
+            <a id="hero-github-link" href="#" target="_blank" rel="noopener noreferrer" class="social-link hidden" aria-label="GitHub Profile" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profile</span>
+          <h2 class="section-title">About Najeeb Ullah</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-card card">
+            <h3 class="card-heading">Professional Overview</h3>
+            <p class="bio-text" id="about-bio">
+              I am a Machine Learning and Artificial Intelligence Engineer based in Karachi, Pakistan, specializing in predictive modeling, deep learning architectures, and Generative AI systems using LangChain. My work encompasses exploratory data analysis, multi-model evaluation, retrieval-augmented generation (RAG), and deployed Streamlit applications. In addition to engineering, I manage residential building operations in Karachi, handling tenant communications, utility tracking, maintenance documentation, and technical repair coordination.
+            </p>
+            <div class="professional-areas" id="about-areas">
+              <div class="area-item">
+                <div class="area-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="area-title">Machine Learning &amp; Deep Learning</h4>
+                  <p class="area-desc">Predictive model comparison, ensemble algorithms, deep neural representations, and stratified cross-validation on clinical datasets.</p>
+                </div>
+              </div>
+              <div class="area-item">
+                <div class="area-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="area-title">LangChain &amp; Generative AI</h4>
+                  <p class="area-desc">Building LLM-powered applications, Retrieval-Augmented Generation (RAG) chains, semantic document queries, and prompt pipelines.</p>
+                </div>
+              </div>
+              <div class="area-item">
+                <div class="area-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                    <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                    <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                    <line x1="8" y1="6" x2="10" y2="6"></line>
+                    <line x1="14" y1="6" x2="16" y2="6"></line>
+                    <line x1="8" y1="10" x2="10" y2="10"></line>
+                    <line x1="14" y1="10" x2="16" y2="10"></line>
+                    <line x1="8" y1="14" x2="10" y2="14"></line>
+                    <line x1="14" y1="14" x2="16" y2="14"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="area-title">Residential Building Management</h4>
+                  <p class="area-desc">Operational oversight: resident notices, utility-bill auditing, maintenance logging, and technical contractor coordination in Karachi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-facts-card card">
+            <h3 class="card-heading">Key Information</h3>
+            <ul class="facts-list">
+              <li class="fact-item">
+                <span class="fact-label">Location</span>
+                <span class="fact-value" id="fact-location">Karachi, Pakistan</span>
+              </li>
+              <li class="fact-item">
+                <span class="fact-label">Email</span>
+                <span class="fact-value">
+                  <a href="mailto:najeebullah.shaikh084@gmail.com" class="fact-link" id="fact-email">najeebullah.shaikh084@gmail.com</a>
+                </span>
+              </li>
+              <li class="fact-item">
+                <span class="fact-label">Phone Numbers</span>
+                <span class="fact-value" id="fact-phone">
+                  <a href="tel:+923222209484" class="fact-link">+92 322 2209484</a><br>
+                  <a href="tel:+923133017170" class="fact-link">+92 313 3017170</a>
+                </span>
+              </li>
+              <li class="fact-item">
+                <span class="fact-label">LinkedIn</span>
+                <span class="fact-value">
+                  <a href="https://www.linkedin.com/in/najeeb-ullah-907237142/" target="_blank" rel="noopener noreferrer" class="fact-link" id="fact-linkedin">View Profile</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI & Data Science Specializations Section -->
+    <section id="specializations" class="specializations-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Disciplines</span>
+          <h2 class="section-title">AI, Machine Learning &amp; Data Science Focus</h2>
+          <p class="section-subtitle">Core technical capabilities across modern AI architectures, empirical predictive modeling, and applied data systems.</p>
+        </div>
+
+        <div class="disciplines-grid">
+          <!-- Card 1: Machine Learning -->
+          <div class="discipline-card">
+            <div class="discipline-img-wrapper">
+              <img src="/assets/images/ml-concept.svg" alt="Machine Learning Architecture Diagram" loading="lazy" width="600" height="400">
+            </div>
+            <div class="discipline-content">
+              <h3 class="discipline-title">Machine Learning &amp; Predictive Modeling</h3>
+              <p class="discipline-text">
+                Developing robust predictive algorithms with ensemble architectures (Random Forest, XGBoost, LightGBM, AdaBoost). Focus on hyper-parameter optimization, stratified k-fold cross-validation, and clinical decision support.
+              </p>
+              <div class="chip-container">
+                <span class="chip">scikit-learn</span>
+                <span class="chip">XGBoost</span>
+                <span class="chip">LightGBM</span>
+                <span class="chip">AdaBoost</span>
+                <span class="chip">Cross-Validation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Deep Learning -->
+          <div class="discipline-card">
+            <div class="discipline-img-wrapper">
+              <img src="/assets/images/dl-neural.svg" alt="Deep Learning Neural Network Diagram" loading="lazy" width="600" height="400">
+            </div>
+            <div class="discipline-content">
+              <h3 class="discipline-title">Deep Learning &amp; Neural Architectures</h3>
+              <p class="discipline-text">
+                Designing multi-layer neural network representations, non-linear feature maps, regularization techniques, and gradient loss optimization for survival prognosis and high-dimensional healthcare datasets.
+              </p>
+              <div class="chip-container">
+                <span class="chip">Neural Networks</span>
+                <span class="chip">Dense Layers</span>
+                <span class="chip">Loss Optimization</span>
+                <span class="chip">Prognosis Modeling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: LangChain & Generative AI -->
+          <div class="discipline-card">
+            <div class="discipline-img-wrapper">
+              <img src="/assets/images/langchain-ai.svg" alt="LangChain RAG Pipeline Architecture Diagram" loading="lazy" width="600" height="400">
+            </div>
+            <div class="discipline-content">
+              <h3 class="discipline-title">LangChain &amp; Generative AI</h3>
+              <p class="discipline-text">
+                Architecting intelligent LLM-powered applications using LangChain. Constructing Retrieval-Augmented Generation (RAG) pipelines, semantic document search, custom prompt engineering, and agentic tool integrations.
+              </p>
+              <div class="chip-container">
+                <span class="chip">LangChain</span>
+                <span class="chip">RAG Pipelines</span>
+                <span class="chip">Prompt Engineering</span>
+                <span class="chip">Vector Stores</span>
+                <span class="chip">LLM Orchestration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Data Science & Analytics -->
+          <div class="discipline-card">
+            <div class="discipline-img-wrapper">
+              <img src="/assets/images/data-science.svg" alt="Data Science Statistical Distribution Diagram" loading="lazy" width="600" height="400">
+            </div>
+            <div class="discipline-content">
+              <h3 class="discipline-title">Data Science &amp; Exploratory Analytics</h3>
+              <p class="discipline-text">
+                Population-scale exploratory data analysis (EDA), multi-collinearity diagnostics (VIF checks), severe class-imbalance mitigation, statistical hypothesis testing, and interactive reporting using Plotly, Matplotlib, and Seaborn.
+              </p>
+              <div class="chip-container">
+                <span class="chip">pandas</span>
+                <span class="chip">NumPy</span>
+                <span class="chip">statsmodels</span>
+                <span class="chip">Plotly</span>
+                <span class="chip">Seaborn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Machine Learning Projects</h2>
+          <p class="section-subtitle">Rigorous, empirical predictive models evaluated on benchmark clinical datasets with interactive deployments.</p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated dynamically via /api/projects -->
+          <div class="loading-placeholder">Loading projects...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Operations</span>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+
+        <div class="experience-wrapper">
+          <div class="experience-card card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Residential Building Management</h3>
+                <span class="exp-location">Karachi, Pakistan</span>
+              </div>
+              <span class="exp-tag">Residential Operations</span>
+            </div>
+
+            <p class="exp-desc">
+              Direct operational responsibility for a multi-tenant residential property in Karachi, ensuring seamless day-to-day facilities management, financial accountability, and tenant satisfaction.
+            </p>
+
+            <div class="exp-responsibilities">
+              <h4 class="subheading">Core Responsibilities</h4>
+              <ul class="resp-list">
+                <li><strong>Resident Notices:</strong> Drafting and circulating official notices and policy updates to building residents.</li>
+                <li><strong>Utility-Bill Tracking:</strong> Monitoring, recording, and reconciling monthly water, electricity, gas, and sanitation bills.</li>
+                <li><strong>Maintenance Records:</strong> Maintaining detailed logs of structural, plumbing, and electrical inspections and vendor services.</li>
+                <li><strong>Repair Coordination:</strong> Liaising directly with technical trades, contractors, and service personnel for on-time maintenance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies and libraries utilized across the machine learning projects.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <div class="skill-category card">
+            <h3 class="skill-cat-title">Language</h3>
+            <div class="chip-container">
+              <span class="chip">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <h3 class="skill-cat-title">Generative AI &amp; LLMs</h3>
+            <div class="chip-container">
+              <span class="chip">LangChain</span>
+              <span class="chip">RAG Pipelines</span>
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">Vector Stores</span>
+              <span class="chip">LLM Orchestration</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <h3 class="skill-cat-title">Machine Learning</h3>
+            <div class="chip-container">
+              <span class="chip">scikit-learn</span>
+              <span class="chip">XGBoost</span>
+              <span class="chip">LightGBM</span>
+              <span class="chip">AdaBoost</span>
+              <span class="chip">Random Forest</span>
+              <span class="chip">Ensemble Methods</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <h3 class="skill-cat-title">Deep Learning</h3>
+            <div class="chip-container">
+              <span class="chip">Neural Networks</span>
+              <span class="chip">Dense Layers</span>
+              <span class="chip">Representation Learning</span>
+              <span class="chip">Loss Optimization</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <h3 class="skill-cat-title">Data Science &amp; Analytics</h3>
+            <div class="chip-container">
+              <span class="chip">pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">statsmodels</span>
+              <span class="chip">EDA Analysis</span>
+              <span class="chip">Feature Engineering</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <h3 class="skill-cat-title">Visualization</h3>
+            <div class="chip-container">
+              <span class="chip">Plotly</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">Seaborn</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <h3 class="skill-cat-title">Deployment &amp; Tools</h3>
+            <div class="chip-container">
+              <span class="chip">Streamlit</span>
+              <span class="chip">Jupyter</span>
+              <span class="chip">Joblib</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (Conditionally visible if gallery images exist) -->
+    <section id="gallery" class="gallery-section section-padding section-hidden">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Media</span>
+          <h2 class="section-title">Gallery</h2>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Populated dynamically if images exist -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox" hidden>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Expanded gallery view">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Connect</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Get in touch for inquiries, collaborations, or project discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card card">
+            <h3 class="card-heading">Direct Contact Information</h3>
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-title">Location</span>
+                  <span class="info-val">Karachi, Pakistan</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-title">Email</span>
+                  <a href="mailto:najeebullah.shaikh084@gmail.com" class="info-val info-link">najeebullah.shaikh084@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-title">Phone</span>
+                  <a href="tel:+923222209484" class="info-val info-link">+92 322 2209484</a><br>
+                  <a href="tel:+923133017170" class="info-val info-link">+92 313 3017170</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-title">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/najeeb-ullah-907237142/" target="_blank" rel="noopener noreferrer" class="info-val info-link">linkedin.com/in/najeeb-ullah-907237142</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card card">
+            <h3 class="card-heading">Send a Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Honeypot Field (hidden from genuine users) -->
+              <div class="honeypot-field" style="display:none !important;" aria-hidden="true">
+                <label for="contact-website">Leave empty</label>
+                <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-control" required minlength="2" maxlength="80" placeholder="e.g. Dr. Ahmed Khan">
+                <span class="form-error" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-control" required placeholder="name@domain.com">
+                <span class="form-error" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject <span class="required">*</span></label>
+                <input type="text" id="contact-subject" name="subject" class="form-control" required maxlength="120" placeholder="Collaboration or Inquiry">
+                <span class="form-error" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" class="form-control" rows="5" required minlength="10" maxlength="2000" placeholder="Please write your message here (10–2000 characters)..."></textarea>
+                <span class="form-error" id="message-error"></span>
+              </div>
+
+              <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner hidden" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">Najeeb Ullah</span>
+          <p class="footer-text">Machine Learning Engineer & Residential Building Manager — Karachi, Pakistan</p>
+        </div>
+        <div class="footer-back-to-top">
+          <a href="#home" class="back-to-top-link" aria-label="Back to top">
+            Back to top &uarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p><strong>Disclaimer:</strong> All machine learning models, applications, and analyses presented on this portfolio are developed strictly for educational and scientific research purposes. They do not constitute clinical diagnostics, medical consultation, or medical advice.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyright-year">2026</span> Najeeb Ullah. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="/js/app.js"></script>
+</body>
+</html>
